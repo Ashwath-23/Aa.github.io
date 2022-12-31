@@ -1,0 +1,133 @@
+
+.split {
+  height: 100%;
+  position: fixed;
+  width: 20%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.splitt {
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: cyan;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #F0ECCF;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container{
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.container .title{
+
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before{
+  content: '';
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+
+.container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100%/2 - 20px);
+}
+.user-details .input-box .details{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size:16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+form .button{
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline:none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius:5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+
+form .button input:hover{
+  background: linear-gradient(135deg,#9b59b6,#71b7e6);
+
+}
+
+/* Style the image inside the centered container, if needed */
+/*.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
